@@ -2,8 +2,8 @@ package Test;
 
 import java.util.*;
 
-public class test {
-    public static String solution(String[] seoul) {
+public class Test {
+    private String solution(String[] seoul) {
         String answer = "";
         
         int x = Arrays.asList(seoul).indexOf("Kim");
@@ -11,12 +11,11 @@ public class test {
         
         return answer;
     }
-	
-	public static void main(String[] args) {
-		String ans;
-		String [] a = {"Jane", "Kim"};
-		ans = solution(a);
+
+    public static void main(String[] args) {
+        String [] a = {"Jane", "Kim"};
+        String ans = new Test().solution(a);
 		
-		System.out.print(ans);
-	}
+        System.out.print(ans);
+    }
 }
